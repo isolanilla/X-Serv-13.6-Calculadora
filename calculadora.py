@@ -34,7 +34,16 @@ def mydiv (parametro1,parametro2):
 		print("No se puede dividir entre 0")
 		exit()
 
+try:
+	int(sys.argv[2])
+	int(sys.argv[1])
+except ValueError:
+	print('could not convert string to float')
+	exit()
+	
 print ('function: ' + sys.argv[1] + ' operando1: ' + sys.argv[2] + ' operando2: ' + sys.argv[3])
+
+
 
 if sys.argv[1] == functions[0] :
 
